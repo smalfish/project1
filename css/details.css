@@ -1,0 +1,89 @@
+.container{
+
+}
+.container .title{
+  height: 28px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 15px;
+}
+.container .title h3{
+  height: 28px;
+  font-size: 18px;
+  border-bottom:2px solid #007DD3;
+}
+.content{
+  position: relative;
+  overflow: hidden;
+  height: 279px;
+  width: 1180px;
+}
+.container .content .content-img{
+  position: absolute;
+  left: 0px;
+  transition:all .5s linear;
+}
+.container .content li{
+  float: left;
+  padding-left:15px ;
+  position: relative;
+}
+.container .content li .play{
+    position: absolute;
+    width: 180px;
+    height: 236px;
+    background-color: #000;
+    top:0;
+    right: 0;
+    opacity: .3;
+    text-align: center;
+    line-height: 236px;
+    display: none;
+}
+.container .content li .first{
+    width: 375px;
+}
+.container .content li .play img{
+    width: 80px;
+    height: 80px;
+}
+
+.container .content li a{
+  display: block;
+  font-size: 16px;
+}
+.container .content li .play:hover{
+    cursor: pointer;
+}
+.container .content li p{
+  font-size: 14px;
+}
+.container .content li .first-img{
+  width: 375px;
+}
+.container .content li img{
+  width: 180px;
+  height: 236px;
+}
+.content a.ck-slide{
+  position:absolute;
+  top:157px;
+  width:35px;
+  height:70px;
+  border-radius:3px;
+  background:#000;
+  opacity:0.3;
+  transition:all .3s linear;
+}
+.content a.ck-slide:hover{
+  opacity:0.6;
+}
+.content a.ck-left{
+  left:15px;
+  top: 30%;
+  background: #000 url(../img/index/arrow-left.png) no-repeat center center;
+}
+.content a.ck-right{
+  right:10px;
+  top: 30%;
+  background:#000 url(../img/index/arrow-right.png) no-repeat center center;
+}

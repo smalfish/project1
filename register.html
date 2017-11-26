@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册页面 </title>
+    <link rel="icon" href="img/favicon.ico">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <style>
+        .error{
+            color:red;
+        }
+        .right{
+            color:green;
+        }
+    </style>
+</head>
+
+<body class="login">
+<div>
+    <div class="login_wrapper">
+        <div class="animate form login_form">
+            <section class="login_content">
+                <form class="form-horizontal" id="form1">
+                    <div class="form-group">
+                      <div class="col-sm-3 text-left col-sm-offset-1">
+                          <p class="left">新用户注册</p>
+                      </div>
+
+                      <div class="col-sm-3 col-sm-offset-3 text-right">
+                          <p class="right">
+                              <span style="text-align: right">
+                                <a href="login.html">直接登录</a>
+                              </span>
+                          </p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-3 text-right">
+                        <label for="uname">用户名：</label>
+                        </div>
+                        <div class="col-sm-5">
+                        <input class="form-control right" autocomplete required minlength="3" maxlength="12" type="text" placeholder="请输入用户名" autofocus
+                               name="uname" id="uname"/>
+                        </div>
+                        <div class="col-sm-4">
+                           <span class="msg-default"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-3 text-right">
+                        <label for="upwd">登录密码：</label>
+                        </div>
+                        <div class="col-sm-5">
+                        <input class="form-control right" required type="password" minlength="6" maxlength="12" placeholder="请输入密码" name="upwd" autofocus
+                               id="upwd"/>
+                        </div>
+                        <div class="col-sm-4">
+                            <span class="msg-default"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-3 text-right">
+                        <label for="upwd2">确认密码：</label>
+                        </div>
+                        <div class="col-sm-5">
+                        <input class="form-control" required type="password" minlength="6" maxlength="12" placeholder="请确认密码" name="upwdconfirm" autofocus
+                               id="upwd2"/>
+                        </div>
+                        <div class="col-sm-4">
+                           <span class="msg-defaultn"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-3 text-right">
+                        <label class="control-label" for="email">&nbsp;&nbsp;邮箱：</label>
+                        </div>
+                        <div class="col-sm-5">
+                        <input class="form-control" autocomplete required type="email" placeholder="请输入邮箱地址" name="email" id="email"/>
+                        </div>
+                        <div class="col-sm-4">
+                        <span class="msg-default"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-3 text-right">
+                        <label for="phone">&nbsp;手机号：</label>
+                        </div>
+                        <div class="col-sm-5">
+                        <input class="form-control" id="phone" name="phone" placeholder="请输入您的手机号"
+                               pattern="(\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$"
+                               required type="text"/>
+                        </div>
+                        <div class="col-sm-4">
+                        <span class="msg-default hidden">请输入合法的手机号</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                        <a class="btn btn-default submit" id="btn1">&nbsp;注&nbsp;册&nbsp;</a>
+                        </div>
+                    </div>
+
+                    <div class="separator">
+                        <div class="clearfix"></div>
+                        <br />
+
+                        <div>
+                            <h3>登录方式：</h3>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>
